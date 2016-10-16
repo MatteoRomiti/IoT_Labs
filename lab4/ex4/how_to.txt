@@ -1,0 +1,17 @@
+client 1:
+run sub_all.py on the Raspberry Pi to see the temperature and the humidity info published by pub12.py (run it there as well)
+run pub3.py to send the command for changing the status of the relay (sub_all.py will execute this command) and sub4.py (on the Raspberry Pi) to see when it changes
+
+client 2:
+run client2sub.py on the Raspberry Pi to see: Temperature, Humidity and Relay Status published from client2pub.py (run it on the Raspberry Pi with sudo privileges);
+to change the relay status: open a python terminal with sudo privileges and run this:
+...
+>>> import RPi.GPIO as GPIO
+>>> GPIO.setmode(GPIO.BCM)
+>>> GPIO.setup(22, GPIO.OUT)
+>>> GPIO.output(22, 0)
+>>> GPIO.output(22, 1)
+...
+
+client 3:
+this task is already implemented with pub3.py

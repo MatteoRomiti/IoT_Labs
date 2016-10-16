@@ -1,0 +1,1 @@
+{"bn": "sensor1", "bt": "1449421978", "e": [{"n": "Temperature", "u": "Celsius Degrees", "v":21.4"}, {"n": "Humidity", "u": "%", "v": "41.8"}]}

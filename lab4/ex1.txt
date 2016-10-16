@@ -1,0 +1,10 @@
+Ex1
+
+publish example (from a terminal):
+mosquitto_pub -t temperature/room/floor -m 30 -q 2
+
+subscribe example (from a new temrinal):
+mosquitto_sub -t temperature/# -q 1
+
+http://manpages.ubuntu.com/manpages/precise/man1/mosquitto_sub.1.html
+http://manpages.ubuntu.com/manpages/precise/man1/mosquitto_pub.1.html
